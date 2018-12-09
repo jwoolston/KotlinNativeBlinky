@@ -25,7 +25,5 @@ fun blinky(value: Int) {
 }
 
 fun main() {
-    printk("Hello, World! (printk)")
-    println("Hello again, println()")
     blinky(1)
 }

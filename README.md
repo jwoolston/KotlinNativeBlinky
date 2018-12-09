@@ -8,3 +8,5 @@ Basic example showing how Kotlin Native can be used with Zephyr RTOS on an STM32
 3. Update the paths in `local.properties` as appropriate for your install and repository clone.
 4. Run the `fullBuild` task
 5. With you board board powered up and connected to your computer, execute the `flashBoard` task to program.
+
+*NOTE: Due to the beta status of kotlin-native, this may break in the future (I will try and keep it current) and the task execution does take a while as there have been no substantial optimization efforts yet for the kotlin-native tools.*

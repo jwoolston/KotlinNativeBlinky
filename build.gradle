@@ -82,4 +82,11 @@ task fullBuild() {
     dependsOn updateCInterop
     dependsOn runKonanc
     dependsOn ninjaBuild
+    tasks.findByName('updateCInterop').mustRunAfter 'ninjaZephyr'
+    tasks.findByName('runKonanc').mustRunAfter 'updateCInterop'
+    tasks.findByName('ninjaBuild').mustRunAfter 'runKonanc'
+}
+
+task flashBoard() {
+    dependsOn ninjaFlash
 }

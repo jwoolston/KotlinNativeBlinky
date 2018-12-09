@@ -1,4 +1,4 @@
-# KotlinNativeBinky
+# KotlinNativeBlinky
 
 Basic example showing how Kotlin Native can be used with Zephyr RTOS on an STM32F4 Discovery board.
 
